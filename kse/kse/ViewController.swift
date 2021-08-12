@@ -7,13 +7,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: NavigationController {
+    @IBOutlet weak var CollectionViewIB: UICollectionView!
+    
+    var images = ["", "", "", "", "", ""]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
 }
-
+extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewFlowLayout
+{
+    func collectionView(_ collectview: UICollectionView, numberOfItemsInSection section: Int ) ->Int {
+        return
+    }
+    func collectionView(_ collectview: UICollectionView, cellForItemAt indexPath: IndexPath ) ->UICollectionViewCell {
+        
+    }
+}
