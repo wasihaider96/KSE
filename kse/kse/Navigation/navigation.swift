@@ -12,9 +12,10 @@ enum BarButtonType {
     case Login
 }
 
-class NavigationController: UIViewController {
+class AppNavigation: UIViewController {
     
     // MARK: - IBOutlets
+    
     // MARK: - Variables
     private var clickHandler: ((Int) -> Void)?
     private var type: BarButtonType = .Login
@@ -82,7 +83,7 @@ class NavigationController: UIViewController {
     // MARK: - Custom Funtions
     private func setupNavigation() {
         // Navigation Settings
-        self.navigationController?.navigationBar.barTintColor = .blue
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0, green: 0.3610317027, blue: 1, alpha: 1)
         self.navigationController?.navigationBar.tintColor = .white
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         self.navigationController?.navigationBar.isTranslucent = false

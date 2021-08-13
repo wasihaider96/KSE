@@ -14,6 +14,10 @@
 		73777A6C26C4F72D00DBA038 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73777A6A26C4F72D00DBA038 /* LaunchScreen.storyboard */; };
 		73777A7426C4F8AC00DBA038 /* navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73777A7326C4F8AC00DBA038 /* navigation.swift */; };
 		73777A7926C54E1500DBA038 /* MyCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73777A7826C54E1500DBA038 /* MyCollectionView.swift */; };
+		739883C626C659EA00C3ECCD /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 739883C526C659EA00C3ECCD /* iCarousel.m */; };
+		739883C926C6743300C3ECCD /* SJCenterFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739883C826C6743300C3ECCD /* SJCenterFlowLayout.swift */; };
+		739883EF26C6774F00C3ECCD /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739883ED26C6774F00C3ECCD /* ImageCell.swift */; };
+		739883F026C6774F00C3ECCD /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 739883EE26C6774F00C3ECCD /* ImageCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		73777A6D26C4F72D00DBA038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73777A7326C4F8AC00DBA038 /* navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigation.swift; sourceTree = "<group>"; };
 		73777A7826C54E1500DBA038 /* MyCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionView.swift; sourceTree = "<group>"; };
+		739883C326C659CF00C3ECCD /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		739883C426C659E900C3ECCD /* kse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kse-Bridging-Header.h"; sourceTree = "<group>"; };
+		739883C526C659EA00C3ECCD /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		739883C826C6743300C3ECCD /* SJCenterFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJCenterFlowLayout.swift; sourceTree = "<group>"; };
+		739883ED26C6774F00C3ECCD /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		739883EE26C6774F00C3ECCD /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +68,19 @@
 		73777A6026C4F72A00DBA038 /* kse */ = {
 			isa = PBXGroup;
 			children = (
+				739883EC26C6772500C3ECCD /* CustomCell */,
+				739883C726C6741700C3ECCD /* CustomClass */,
 				73777A7526C4F8BB00DBA038 /* Navigation */,
 				73777A6126C4F72A00DBA038 /* AppDelegate.swift */,
 				73777A6326C4F72A00DBA038 /* ViewController.swift */,
+				739883C326C659CF00C3ECCD /* iCarousel.h */,
+				739883C526C659EA00C3ECCD /* iCarousel.m */,
 				73777A6526C4F72A00DBA038 /* Main.storyboard */,
 				73777A7826C54E1500DBA038 /* MyCollectionView.swift */,
 				73777A6826C4F72D00DBA038 /* Assets.xcassets */,
 				73777A6A26C4F72D00DBA038 /* LaunchScreen.storyboard */,
 				73777A6D26C4F72D00DBA038 /* Info.plist */,
+				739883C426C659E900C3ECCD /* kse-Bridging-Header.h */,
 			);
 			path = kse;
 			sourceTree = "<group>";
@@ -76,6 +91,23 @@
 				73777A7326C4F8AC00DBA038 /* navigation.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		739883C726C6741700C3ECCD /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				739883C826C6743300C3ECCD /* SJCenterFlowLayout.swift */,
+			);
+			path = CustomClass;
+			sourceTree = "<group>";
+		};
+		739883EC26C6772500C3ECCD /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				739883ED26C6774F00C3ECCD /* ImageCell.swift */,
+				739883EE26C6774F00C3ECCD /* ImageCell.xib */,
+			);
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +141,7 @@
 				TargetAttributes = {
 					73777A5D26C4F72A00DBA038 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -136,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73777A6C26C4F72D00DBA038 /* LaunchScreen.storyboard in Resources */,
+				739883F026C6774F00C3ECCD /* ImageCell.xib in Resources */,
 				73777A6926C4F72D00DBA038 /* Assets.xcassets in Resources */,
 				73777A6726C4F72A00DBA038 /* Main.storyboard in Resources */,
 			);
@@ -149,8 +183,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				73777A6426C4F72A00DBA038 /* ViewController.swift in Sources */,
+				739883C926C6743300C3ECCD /* SJCenterFlowLayout.swift in Sources */,
+				739883C626C659EA00C3ECCD /* iCarousel.m in Sources */,
 				73777A7426C4F8AC00DBA038 /* navigation.swift in Sources */,
 				73777A7926C54E1500DBA038 /* MyCollectionView.swift in Sources */,
+				739883EF26C6774F00C3ECCD /* ImageCell.swift in Sources */,
 				73777A6226C4F72A00DBA038 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = kse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,6 +344,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "kse/kse-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
@@ -316,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = kse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,6 +365,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "kse/kse-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
