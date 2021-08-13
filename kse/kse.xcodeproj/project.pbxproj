@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		73777A6C26C4F72D00DBA038 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73777A6A26C4F72D00DBA038 /* LaunchScreen.storyboard */; };
 		73777A7426C4F8AC00DBA038 /* navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73777A7326C4F8AC00DBA038 /* navigation.swift */; };
 		73777A7926C54E1500DBA038 /* MyCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73777A7826C54E1500DBA038 /* MyCollectionView.swift */; };
+		738E367826C64F8E007787CB /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 738E367726C64F8E007787CB /* iCarousel.m */; };
+		BEC72E843B7892B0D461E02D /* Pods_kse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C1C7D404716328B338AE91 /* Pods_kse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		73777A6D26C4F72D00DBA038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73777A7326C4F8AC00DBA038 /* navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigation.swift; sourceTree = "<group>"; };
 		73777A7826C54E1500DBA038 /* MyCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionView.swift; sourceTree = "<group>"; };
+		738E367626C64F8E007787CB /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		738E367726C64F8E007787CB /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		738E367926C65340007787CB /* iCarouselEffectss-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iCarouselEffectss-Bridging-Header.h"; sourceTree = "<group>"; };
+		C8C1C7D404716328B338AE91 /* Pods_kse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEC72E843B7892B0D461E02D /* Pods_kse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,7 @@
 			children = (
 				73777A6026C4F72A00DBA038 /* kse */,
 				73777A5F26C4F72A00DBA038 /* Products */,
+				A47A9EA4F19AF01372141664 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				73777A7526C4F8BB00DBA038 /* Navigation */,
+				738E367626C64F8E007787CB /* iCarousel.h */,
+				738E367726C64F8E007787CB /* iCarousel.m */,
 				73777A6126C4F72A00DBA038 /* AppDelegate.swift */,
 				73777A6326C4F72A00DBA038 /* ViewController.swift */,
 				73777A6526C4F72A00DBA038 /* Main.storyboard */,
@@ -66,6 +76,7 @@
 				73777A6826C4F72D00DBA038 /* Assets.xcassets */,
 				73777A6A26C4F72D00DBA038 /* LaunchScreen.storyboard */,
 				73777A6D26C4F72D00DBA038 /* Info.plist */,
+				738E367926C65340007787CB /* iCarouselEffectss-Bridging-Header.h */,
 			);
 			path = kse;
 			sourceTree = "<group>";
@@ -78,6 +89,14 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		A47A9EA4F19AF01372141664 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8C1C7D404716328B338AE91 /* Pods_kse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73777A7026C4F72D00DBA038 /* Build configuration list for PBXNativeTarget "kse" */;
 			buildPhases = (
+				94E570B5F6F1CD381A5EA452 /* [CP] Check Pods Manifest.lock */,
 				73777A5A26C4F72A00DBA038 /* Sources */,
 				73777A5B26C4F72A00DBA038 /* Frameworks */,
 				73777A5C26C4F72A00DBA038 /* Resources */,
+				532DBDAF17F654B05D712007 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -109,6 +130,7 @@
 				TargetAttributes = {
 					73777A5D26C4F72A00DBA038 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -143,12 +165,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		532DBDAF17F654B05D712007 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kse/Pods-kse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kse/Pods-kse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kse/Pods-kse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94E570B5F6F1CD381A5EA452 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		73777A5A26C4F72A00DBA038 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				73777A6426C4F72A00DBA038 /* ViewController.swift in Sources */,
+				738E367826C64F8E007787CB /* iCarousel.m in Sources */,
 				73777A7426C4F8AC00DBA038 /* navigation.swift in Sources */,
 				73777A7926C54E1500DBA038 /* MyCollectionView.swift in Sources */,
 				73777A6226C4F72A00DBA038 /* AppDelegate.swift in Sources */,
@@ -298,6 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = kse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,6 +372,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "kse/kse-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
@@ -316,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = kse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,6 +393,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "kse/kse-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};

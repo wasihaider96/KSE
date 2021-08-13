@@ -1,0 +1,16 @@
+PODS:
+  - WillowTreeOuroboros (0.2.1)
+
+DEPENDENCIES:
+  - WillowTreeOuroboros
+
+SPEC REPOS:
+  trunk:
+    - WillowTreeOuroboros
+
+SPEC CHECKSUMS:
+  WillowTreeOuroboros: e4f362726734d9151690dd540fb246f69a85e0a0
+
+PODFILE CHECKSUM: ce0559792c035d4ff41a641ce2fd7a57696eeed4
+
+COCOAPODS: 1.10.1
